@@ -1,0 +1,68 @@
+<!-- Fun with Brushes! -->
+<Window 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="SolidColorBrush Animation Example"
+  Background="White">
+  
+	<StackPanel>
+
+		<!-- Solid brush using type converter -->
+		<Ellipse Fill ="DarkRed" Height ="50" Width ="50"/>
+
+		<!-- Using the SolidColorBrush type -->
+		<Ellipse Height ="50" Width ="50">
+			<Ellipse.Fill>
+				<SolidColorBrush Color ="DarkGoldenrod"/>
+			</Ellipse.Fill>
+		</Ellipse>
+
+		<!-- Using the SolidColorBrush and Color type -->
+		<Ellipse Height ="50" Width ="50">
+			<Ellipse.Fill>
+				<SolidColorBrush>
+					<SolidColorBrush.Color>
+						<Color A ="40" R ="100" G ="87" B ="98"/>
+					</SolidColorBrush.Color>
+				</SolidColorBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+		<!-- A rectangle with a linear fill -->
+		<Rectangle RadiusX ="15" RadiusY ="15" Height ="40" Width ="100">
+			<Rectangle.Fill>
+				<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+					<GradientStop Color="LimeGreen" Offset="0.0" />
+					<GradientStop Color="Orange" Offset="0.25" />
+					<GradientStop Color="Yellow" Offset="0.75" />
+					<GradientStop Color="Blue" Offset="1.0" />
+				</LinearGradientBrush>
+			</Rectangle.Fill>
+		</Rectangle>
+
+		<!-- An ellipse with a radial fill -->
+		<Ellipse  Height ="75" Width ="75">
+			<Ellipse.Fill>
+				<RadialGradientBrush GradientOrigin="0.5,0.5"
+					Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+					<GradientStop Color="Yellow" Offset="0" />
+					<GradientStop Color="Red" Offset="0.25" />
+					<GradientStop Color="Blue" Offset="0.75" />
+					<GradientStop Color="LimeGreen" Offset="1" />
+				</RadialGradientBrush>
+			</Ellipse.Fill>
+		</Ellipse>
+		
+		<!-- A large rectangle built using an image brush-->
+		<Rectangle Height ="100" Width ="300">
+			<Rectangle.Fill>
+				<ImageBrush>
+					<ImageBrush.ImageSource>
+						<!-- You may need to adjust this path... -->
+						<BitmapImage  UriSource ="Gooseberry0007.JPG"/>	 
+					</ImageBrush.ImageSource>		
+				</ImageBrush>		 
+			</Rectangle.Fill>		
+		</Rectangle>
+	</StackPanel>
+
+</Window>

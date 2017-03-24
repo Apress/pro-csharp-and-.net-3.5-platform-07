@@ -1,0 +1,36 @@
+﻿<Window x:Class="CarViewerApp.AddNewCarDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="AddNewCarDialog" Height="234" Width="529" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="144" />
+      <RowDefinition Height="51" />
+    </Grid.RowDefinitions>
+
+    <!-- Use the XmlDataProvider-->
+    <Grid.Resources>
+      <XmlDataProvider x:Key="CarsXmlDoc"       Source="Inventory.xml"/>  <!-- This file must be in the same location as the *.exe -->
+    </Grid.Resources>
+
+    <!-- Now, build a grid of data, mapping attributes/elements to columns 
+         using XPath expressions -->
+    <ListView Name="lstCars" Grid.Row="0"
+     ItemsSource="{Binding Source={StaticResource CarsXmlDoc}, XPath=/Inventory/Car}">
+      <ListView.View>
+        <GridView>
+          <GridViewColumn Width="100" Header="ID" DisplayMemberBinding="{Binding XPath=@carID}"/>
+          <GridViewColumn Width="100" Header="Make" DisplayMemberBinding="{Binding XPath=Make}"/>
+          <GridViewColumn Width="100" Header="Color" DisplayMemberBinding="{Binding XPath=Color}"/>
+          <GridViewColumn Width="150" Header="Pet Name" DisplayMemberBinding="{Binding XPath=PetName}"/>
+        </GridView>
+      </ListView.View>
+    </ListView>
+
+    <WrapPanel Grid.Row="1">
+      <Label Content="Select a Row to Add to your car collection" Margin="10" />
+      <Button Name="btnOK" Content="OK" Width="80" Height="25" Margin="10" IsDefault="True" TabIndex="1" Click="btnOK_Click"/>
+      <Button Name="btnCancel" Content="Cancel" Width="80" Height="25" Margin="10" IsCancel="True" TabIndex="2"/>
+    </WrapPanel>
+  </Grid>
+</Window>

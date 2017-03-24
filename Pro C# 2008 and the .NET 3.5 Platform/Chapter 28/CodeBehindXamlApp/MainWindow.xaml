@@ -1,0 +1,11 @@
+﻿<!-- Here is our Window definition -->
+<Window x:Class="SimpleXamlApp.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="My Xaml App" Height="200" Width="300" WindowStartupLocation ="CenterScreen">
+
+  <!--Define our button type-->
+  <Button Width="133" Height="24" Name="btnExitApp" Click ="btnExitApp_Clicked">
+    Exit Application
+  </Button>
+</Window>

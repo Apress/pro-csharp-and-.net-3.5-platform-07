@@ -1,0 +1,31 @@
+﻿<Window x:Class="SimpleDataBinding.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:myConverters ="clr-namespace:SimpleDataBinding" 
+    Title="Simple Data Binding" Height="334" Width="288" 
+    WindowStartupLocation="CenterScreen"     >
+
+  <Window.Resources>
+    <myConverters:MyDoubleConverter x:Key="DoubleConverter"/>
+    <myConverters:MyColorConverter x:Key="ColorConverter"/>
+  </Window.Resources>
+
+  <!-- The panel is setting the data context to the scrollbar object -->
+    <StackPanel Width="250" DataContext = "{Binding ElementName=mySB}">
+   
+      <Label Content="Move the scroll bar to see the current value"/>
+
+      <ScrollBar Orientation="Horizontal" Height="30" Name="mySB" 
+      Maximum = "100" LargeChange="1" SmallChange="1"/>
+
+    <!-- Now both UI elements use the scrollbar's value in unique ways. -->
+    <TextBox Height="30" BorderBrush="Blue" BorderThickness="2" Name="txtThumbValue"
+    Text = "{Binding Path=Value, Converter={StaticResource DoubleConverter}}"/>
+
+    <Button Content="Click" Height="200"  
+    FontSize = "{Binding Path=Value}" 
+    Background= "{Binding Path=Value, Converter={StaticResource ColorConverter}}"/>
+
+  </StackPanel>
+
+</Window>

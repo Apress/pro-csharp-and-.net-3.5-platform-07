@@ -1,0 +1,9 @@
+<!-- The main method seems to be missing!
+     However the StartupUri attribute is the 
+     functional equivalent -->
+<Application x:Class="SimpleXamlApp.MyApp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="MainWindow.xaml" Exit="AppExit"
+    >
+</Application>

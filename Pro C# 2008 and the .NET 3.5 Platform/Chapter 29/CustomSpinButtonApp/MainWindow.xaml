@@ -1,0 +1,19 @@
+﻿<Window x:Class="CustomSpinButtonApp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CustomSpinButtonApp" Height="124" Width="280" WindowStartupLocation="CenterScreen">
+	<StackPanel>
+		<!-- The 'Up' button -->
+		<RepeatButton Height ="25" Width = "40" Name ="repeatAddValueButton"
+			Delay ="200" Interval ="1" Click ="repeatAddValueButton_Click" Content = "+"/>
+   
+    <!-- Displays the current value -->
+		<Label Name ="lblCurrentValue" Background ="LightGray" Height ="30" Width = "40"
+			VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="15"/>
+
+		<!-- The 'Down' button -->
+		<RepeatButton Height ="25" Width = "40" Name ="repeatRemoveValueButton"
+			Delay ="200" Interval ="1" Click ="repeatRemoveValueButton_Click" Content = "-"/>
+	</StackPanel>
+
+</Window>

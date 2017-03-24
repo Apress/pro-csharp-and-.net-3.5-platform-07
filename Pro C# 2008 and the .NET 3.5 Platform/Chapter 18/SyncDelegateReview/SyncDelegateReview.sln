@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncDelegateReview", "SyncDelegateReview.csproj", "{88B2E2C6-1067-414F-AB82-B4D5DD93A9A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88B2E2C6-1067-414F-AB82-B4D5DD93A9A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B2E2C6-1067-414F-AB82-B4D5DD93A9A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B2E2C6-1067-414F-AB82-B4D5DD93A9A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B2E2C6-1067-414F-AB82-B4D5DD93A9A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

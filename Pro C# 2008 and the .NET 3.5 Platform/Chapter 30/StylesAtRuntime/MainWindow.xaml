@@ -1,0 +1,50 @@
+﻿<Window x:Class="StylesAtRuntime.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StylesAtRuntime" Height="231" Width="544" WindowStartupLocation="CenterScreen">
+	<Window.Resources>
+		<!-- This style will tilt buttons at a 10 degree angle-->
+		<Style x:Key ="TiltStyle" TargetType = "{x:Type Button}">
+			<Setter Property = "RenderTransform">
+				<Setter.Value>
+					<RotateTransform Angle = "10"/>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+		<!-- This style will gives buttons a spring time feel-->
+		<Style x:Key ="GreenStyle" TargetType = "{x:Type Button}">
+			<Setter Property = "Background" Value ="Green"/>
+			<Setter Property = "Foreground" Value ="Yellow"/>
+			<Setter Property ="FontSize" Value ="15" />
+		</Style>
+
+		<!-- This style will increase the size of a button when
+          the mouse is over it-->
+		<Style x:Key ="MouseOverStyle"  BasedOn ="{StaticResource GreenStyle}"
+							 TargetType = "{x:Type Button}">
+			<Style.Triggers>
+				<Trigger Property ="IsMouseOver" Value ="True">
+					<Setter Property ="FontSize" Value ="20" />
+					<Setter Property ="Foreground" Value ="Black" />
+				</Trigger>
+			</Style.Triggers>
+		</Style>
+	</Window.Resources>
+
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<StackPanel Grid.Column="0">
+			<TextBlock TextWrapping ="Wrap" FontSize ="20"
+				Padding="5,5,5,5">Please select a style for the button on the left.</TextBlock>
+			<ListBox Name ="lstStyles" Height ="60" Background = "Yellow"
+				SelectionChanged ="comboStyles_Changed" />
+		</StackPanel>
+		<Button Name="btnMouseOverStyle" Grid.Column="1"
+			Height="40" Width="100" Click ="btnMouseOverStyle_Click">My Button</Button>
+	</Grid>
+
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPFGraphicsOptions.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="WPFGraphicsOptions" Height="300" Width="300"
+    WindowStartupLocation="CenterScreen">
+	<StackPanel xmlns:custom = "clr-namespace:WPFGraphicsOptions">
+		<!-- Draw a rectangle using Shape types -->
+		<Rectangle Height = "55" Width = "105" Stroke ="Blue"
+			StrokeThickness ="5" Fill = "LightBlue"/>
+
+		<!-- Draw a rectangle using Drawing types -->
+		<Image Height ="55" Width ="105">
+			<Image.Source>
+				<DrawingImage>
+					<DrawingImage.Drawing>
+						<GeometryDrawing Brush ="LightBlue">
+							<GeometryDrawing.Pen>
+								<Pen Brush ="Blue" Thickness ="5"/>
+							</GeometryDrawing.Pen>
+							<GeometryDrawing.Geometry>
+								<RectangleGeometry Rect="0,0,100,50"/>
+							</GeometryDrawing.Geometry>
+						</GeometryDrawing>
+					</DrawingImage.Drawing>
+				</DrawingImage>
+			</Image.Source>
+		</Image>
+		<custom:MyCustomRenderer RectHeight ="100" RectWidth ="100"/>
+	</StackPanel>
+</Window>

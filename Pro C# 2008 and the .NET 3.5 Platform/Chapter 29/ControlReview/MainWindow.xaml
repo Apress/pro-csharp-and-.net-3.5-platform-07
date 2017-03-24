@@ -1,0 +1,25 @@
+﻿<Window x:Class="ControlReview.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ControlReview" Height="211" Width="421" WindowStartupLocation="CenterScreen">
+    <Grid>
+    <!-- A custom button with built in selections! -->
+    <Button Name="btnPurchaseOptions" Height="100" Width = "300">
+      <StackPanel>
+        <Label Name="lblInstructions" Foreground = "DarkGreen" 
+           Content = "Select Your Options and Press to Commit"/>
+        <StackPanel Orientation = "Horizontal">
+          <Expander Name="colorExpander" Header = "Color">
+            <!-- Assume items are placed here... -->
+          </Expander>
+          <Expander Name="MakeExpander" Header = "Make">
+            <!-- Assume items are placed here... -->
+          </Expander>
+          <Expander Name="paymentExpander" Header = "Payment Plan">
+            <!-- Assume items are placed here... -->
+          </Expander>
+        </StackPanel>
+      </StackPanel>
+    </Button>
+  </Grid>
+</Window>

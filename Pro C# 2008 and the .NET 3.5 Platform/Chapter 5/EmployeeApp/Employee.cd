@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Segoe UI" Size="9" />
+  <Class Name="EmployeeApp.Employee">
+    <Position X="0.5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Employee.cs</FileName>
+      <HashCode>AAAAAAAAAAgAggAAAEAIAAQQEAAAAACEAAAABQAAAUA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,46 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+		</Grid.RowDefinitions>
+
+		<!-- A rectangle with a rotate transformation-->
+		<Rectangle Height ="100" Width ="40" Fill ="Red" Grid.Row="0" Grid.Column="0">
+			<Rectangle.LayoutTransform>
+				<RotateTransform Angle ="45"/>
+			</Rectangle.LayoutTransform>
+		</Rectangle>
+
+		<!-- A CheckBox with a skew transformation -->
+		<Button Content ="Click Me!" Grid.Row="0" Grid.Column="1" Width="95" Height="40">
+			<Button.RenderTransform>
+				<SkewTransform AngleX ="20" AngleY ="20"/>
+			</Button.RenderTransform>
+		</Button>
+
+		<!-- An ellipse that has been scaled by 20% -->
+		<Ellipse Fill ="Blue" Grid.Row="0" Grid.Column="2" Width="5" Height="5">
+			<Ellipse.RenderTransform>
+				<ScaleTransform ScaleX ="20" ScaleY ="20"/>
+			</Ellipse.RenderTransform>
+		</Ellipse>
+
+		<!-- A button that has been skewed and rotated -->
+		<Button Content ="Me Too!" Grid.Row="0" Grid.Column="3" Width="50" Height="40">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<SkewTransform AngleX ="20" AngleY ="20"/>
+					<RotateTransform Angle ="45"/>
+					<ScaleTransform ScaleX ="2" ScaleY ="2"/>
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+	</Grid>
+
+</Window>

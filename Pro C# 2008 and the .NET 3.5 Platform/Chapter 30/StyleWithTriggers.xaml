@@ -1,0 +1,30 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Window.Resources>
+  <Style x:Key ="TextBoxStyle" TargetType = "{x:Type TextBox}">
+    <Setter Property = "Foreground" Value = "Black"/>
+    <Setter Property = "Background" Value = "LightGray"/>
+    <Setter Property = "Height" Value = "30"/>
+    <Setter Property = "Width" Value = "100"/>
+    <!-- The following setter will only be applied when the text box is 
+             in focus and the mouse is over the text box. -->
+      <Style.Triggers>
+        <MultiTrigger>	
+        <MultiTrigger.Conditions>
+          <Condition Property = "IsFocused" Value = "True"/>
+          <Condition Property = "IsMouseOver" Value = "True"/>
+        </MultiTrigger.Conditions>
+        <Setter Property = "Background" Value = "Yellow"/>                   
+      </MultiTrigger>
+    </Style.Triggers>
+  </Style>
+</Window.Resources>
+
+
+  <StackPanel >
+    <TextBox Name = "txtOne" Style = "{StaticResource TextBoxStyle}" />    
+    <TextBox Name = "txtTwo" Style = "{StaticResource TextBoxStyle}" />
+    <TextBox Name = "txtThree" Style = "{StaticResource TextBoxStyle}" />
+   </StackPanel>
+</Window>

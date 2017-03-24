@@ -1,0 +1,26 @@
+﻿<Window x:Class="FunWithSystemWindowsShapes.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="FunWithSystemWindowsShapes" Height="352" Width="334" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+			<!-- A line which monitors the mouse entering its area-->
+			<Line Name ="SimpleLine" X1 ="0" X2 ="50" Y1 ="0" Y2 ="50" 
+						Stroke ="DarkOliveGreen" StrokeThickness ="5"
+						ToolTip ="This is a line!" MouseEnter ="SimpleLine_MouseEnter"/>
+			
+			<!-- A rectangle with curved corners -->
+			<Rectangle RadiusX ="20" RadiusY ="50" Fill ="DarkBlue" Width ="150" Height ="50"/>
+			
+			<!-- Ployline types do not require connecting ends -->
+			<Polyline Stroke ="Red" StrokeThickness ="20" StrokeLineJoin ="Round" 
+							 	Points ="10,10   40,40  
+												 10,90   300,50"/>
+			
+			<!-- A Polygon always closes the end points-->
+			<Polygon Fill ="AliceBlue" StrokeThickness ="5" 
+							 Stroke ="Green" 
+							 Points ="40,10
+											  70,80
+												10,50" />
+    </StackPanel>
+</Window>

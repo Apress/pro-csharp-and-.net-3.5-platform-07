@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <title>This is the Cars Web Site</title>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function btnHelp_onclick() {
+  alert("Dude, it is not that hard. Click the Submit button!");
+}
+
+function btnSubmit_onclick(){
+  // If they forget either item, pop up a message box.
+  if((defaultPage.txtUserName.value == "") ||
+    (defaultPage.txtPassword.value == ""))
+  {
+    alert("You must supply a user name and password!");
+    return false;
+  }
+  return true;
+}
+
+// ]]>
+</script>
+</head>
+<body bgcolor="NavajoWhite">
+  <h1 align="center"> The Cars Login Page</h1>
+  <p align="center"> <br/>
+    Please enter your <i>user name</i> and <i>password</i>.
+  </p>
+<!-- Build a form to get user info -->
+<form id="defaultPage"  action="http://localhost/Cars/ClassicAspPage.asp" method = "POST">&nbsp;<p align="center">
+    User Name:
+    <input id="txtUserName" type="text" name="txtUserName"/></p>
+  <p align="center">
+    Password:
+    <input name="txtPassword" type="password" id="txtPassword"/></p>
+  <p align="center">
+    <input name="btnSubmit" type="submit" value="Submit" id="btnSubmit" onclick="btnSubmit_onclick()" />
+    <input name="btnReset" type="reset" value="Reset" id="btnReset"/>
+    <input name="btnHelp" type="reset" value="Help" id="btnHelp" onclick="btnHelp_onclick()" /></p>
+</form>
+
+</body>
+</html>
+
+

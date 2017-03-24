@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AutoLotDataReader">
+</Property><Property Name="Solution File" Value="C:\My Books\C# and the .NET Platform 4th ed\Code\Chapter 22\AutoLotDataReader\AutoLotDataReader.sln">
+</Property><Property Name="Date" Value="Monday, August 27, 2007">
+</Property><Property Name="Time" Value="12:21 PM">
+</Property></Properties><Event ErrorLevel="0" Project="AutoLotDataReader" Source="AutoLotDataReader\AutoLotDataReader.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AutoLotDataReader" Source="AutoLotDataReader\AutoLotDataReader.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="AutoLotDataReader.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AutoLotDataReader.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AutoLotDataReader" Source="AutoLotDataReader\AutoLotDataReader.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

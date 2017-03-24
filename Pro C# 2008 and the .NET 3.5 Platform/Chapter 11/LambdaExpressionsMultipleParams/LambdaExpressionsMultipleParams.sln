@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambdaExpressionsMultipleParams", "LambdaExpressionsMultipleParams.csproj", "{9E342FD8-8C8A-49C9-8743-C6D21BE3C4C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E342FD8-8C8A-49C9-8743-C6D21BE3C4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E342FD8-8C8A-49C9-8743-C6D21BE3C4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E342FD8-8C8A-49C9-8743-C6D21BE3C4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E342FD8-8C8A-49C9-8743-C6D21BE3C4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

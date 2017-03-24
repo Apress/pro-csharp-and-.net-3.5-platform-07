@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsafeCode", "UnsafeCode.csproj", "{BECA3726-9AB2-478D-B0E8-B02DF35CDF09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BECA3726-9AB2-478D-B0E8-B02DF35CDF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BECA3726-9AB2-478D-B0E8-B02DF35CDF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BECA3726-9AB2-478D-B0E8-B02DF35CDF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BECA3726-9AB2-478D-B0E8-B02DF35CDF09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

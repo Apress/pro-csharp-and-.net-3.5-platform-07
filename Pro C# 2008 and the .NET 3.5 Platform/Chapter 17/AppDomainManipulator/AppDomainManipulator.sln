@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppDomainManipulator", "AppDomainManipulator.csproj", "{407ED3FD-E65E-453E-8BA8-8539C6F23188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407ED3FD-E65E-453E-8BA8-8539C6F23188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407ED3FD-E65E-453E-8BA8-8539C6F23188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407ED3FD-E65E-453E-8BA8-8539C6F23188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407ED3FD-E65E-453E-8BA8-8539C6F23188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

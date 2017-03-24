@@ -1,0 +1,4 @@
+/target:exe
+/out:ConsoleClientApp.exe
+/reference:CoreLibDumper.dll
+ConsoleClientApp.cs

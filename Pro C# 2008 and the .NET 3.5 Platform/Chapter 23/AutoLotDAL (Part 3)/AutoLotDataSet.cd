@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AutoLotDAL.AutoLotDataSet">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <NestedTypes>
+      <Class Name="AutoLotDAL.AutoLotDataSet.InventoryDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Delegate Name="AutoLotDAL.AutoLotDataSet.InventoryRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="AutoLotDAL.AutoLotDataSet.OrdersRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="AutoLotDAL.AutoLotDataSet.OrdersRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="AutoLotDAL.AutoLotDataSet.OrdersRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="AutoLotDAL.AutoLotDataSet.InventoryRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="AutoLotDAL.AutoLotDataSet.InventoryRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="AutoLotDAL.AutoLotDataSet.CustomersRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="AutoLotDAL.AutoLotDataSet.OrdersDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="AutoLotDAL.AutoLotDataSet.CustomersRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="AutoLotDAL.AutoLotDataSet.CustomersDataTable" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Delegate Name="AutoLotDAL.AutoLotDataSet.CustomersRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BAEAAAAAAwAAgAJABAACQAAAIAgCQDgAAAAiAgEAFBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoLotDAL.AutoLotDataSetTableAdapters.CustomersTableAdapter" Collapsed="true">
+    <Position X="4.25" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+      <FileName>AutoLotDataSet.Adapters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoLotDAL.AutoLotDataSetTableAdapters.InventoryTableAdapter" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoLotDAL.AutoLotDataSetTableAdapters.OrdersTableAdapter" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoLotDAL.AutoLotDataSetTableAdapters.QueriesTableAdapter" Collapsed="true">
+    <Position X="4.25" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAIAAAIAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AutoLotDAL.AutoLotDataSetTableAdapters.TableAdapterManager">
+    <Position X="6.75" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="AutoLotDAL.AutoLotDataSetTableAdapters.TableAdapterManager.UpdateOrderOption" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="AutoLotDAL.AutoLotDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AYAAACAAAABABAEBAQAAMAAgAAACgAKAAAQABAEABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

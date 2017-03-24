@@ -1,0 +1,16 @@
+﻿<Window x:Class="FunWithCommands.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Press F1 to get help" Height="242" Width="391"
+    >
+	<DockPanel>
+		<Menu DockPanel.Dock ="Top" HorizontalAlignment="Left" Background="White">
+			<MenuItem Header="_Edit">
+				<MenuItem Command ="Copy"/>
+				<MenuItem Command ="Cut"/>
+				<MenuItem Command ="Paste"/>
+			</MenuItem>
+		</Menu>
+		<TextBox AcceptsReturn ="True" Foreground ="Black" Background ="AliceBlue"></TextBox>
+	</DockPanel> 	
+</Window>

@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WFMathClient", "WFMathClient.csproj", "{AEFC43E1-3B9A-43AD-9C4F-1FF21EE85900}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEFC43E1-3B9A-43AD-9C4F-1FF21EE85900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEFC43E1-3B9A-43AD-9C4F-1FF21EE85900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEFC43E1-3B9A-43AD-9C4F-1FF21EE85900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEFC43E1-3B9A-43AD-9C4F-1FF21EE85900}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

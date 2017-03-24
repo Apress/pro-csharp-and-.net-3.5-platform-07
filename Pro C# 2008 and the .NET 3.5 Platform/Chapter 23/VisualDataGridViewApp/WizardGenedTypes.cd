@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="VisualDataGridViewApp.InventoryDataSet">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <NestedTypes>
+      <Class Name="VisualDataGridViewApp.InventoryDataSet.InventoryDataTable">
+        <Compartments>
+          <Compartment Name="Fields" Collapsed="true" />
+          <Compartment Name="Properties" Collapsed="true" />
+          <Compartment Name="Events" Collapsed="true" />
+        </Compartments>
+        <TypeIdentifier>
+          <NewMemberFileName>InventoryDataSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="VisualDataGridViewApp.InventoryDataSet.InventoryRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="VisualDataGridViewApp.InventoryDataSet.InventoryRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="VisualDataGridViewApp.InventoryDataSet.InventoryRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAwAAAAJABAACQAAAAAgCQBgAAAAAAgEAFBA=</HashCode>
+      <FileName>InventoryDataSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisualDataGridViewApp.InventoryDataSetTableAdapters.InventoryTableAdapter">
+    <Position X="7.25" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisualDataGridViewApp.InventoryDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="4" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAACAAAABABAEBAAAAMAAgAAACgACAAAQABAAABAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
